@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap5</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+        <h1>Home work 1----  Form      </h1>
+   
+
+
+    <div class="container">
+      
+       <form>
+         <div class="mb-3">
+            <label for="email1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email1" name="email1" required>
+         </div>
+         <div class="mb-3">
+            <label for="password1" class="form-label">Password</label>
+            <input type="password" class="form-control password1" id="password1" name="password1" required>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input Check1" id="check1" name="Check1">
+            <label class="form-check-label" for="check1">Check me out</label>
+        </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+      </form>
+      
+    </div>
+
+
+
+    <h1>Validation</h1>
+
+  <div class="container">
+    <!-- form -->
+   <form class="row g-3 needs-validation" novalidate>
+    <!-- firstname -->
+     <div class="col-md-6">
+        <label for="f_name" class="form-label">First name</label>
+        <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter Your First Name" required>
+    <div class="valid-feedback">
+        Looks good!
+    </div>
+    <div class="invalid-feedback">
+       Enter Your First Name.
+    </div>
+  </div>  
+  <!-- last name -->
+  <div class="col-md-6">
+    <label for="l_name" class="form-label">Last name</label>
+    <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter Your Last Name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+       Enter Your Last Name.
+    </div>
+  </div>
+   <!-- last name -->
+  <div class="col-md-12">
+    <label for="email" class="form-label">Email Address</label>
+    <input type="text" class="form-control l_name" id="email" name="email" placeholder="Enter Your Email Address" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+       Enter Your Email Address.
+    </div>
+   </div>
+  
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+      <label class="form-check-label" for="invalidCheck3">
+        Agree to terms and conditions
+      </label>
+      <div id="invalidCheck3Feedback" class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+</div>  
+
+<!-- form end -->
+
+
+
+
+<h1>TOOLTIPS VALIDATION</h1>
+
+  <div class="container">
+    <!-- form start -->
+    <form class="row g-3 needs-validation" novalidate>
+      <!-- first name -->
+      <div class="col-md-4">
+        <label for="f_name" class="form-label">First Name</label>
+        <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter Your First Name" required>
+        <div class="valid-tooltip">
+          Looks good!
+        </div>
+      </div>
+     <!-- last name -->
+      <div class="col-md-4">
+        <label for="l_name" class="form-label">Last Name</label>
+        <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter Your Last Name" required>
+        <div class="valid-tooltip">
+          Looks good!
+        </div>
+      </div>  
+     <!-- Email name -->
+      <div class="col-md-4">
+        <label for="email name" class="form-label">Email Name</label>
+        <input type="text" class="form-control email name" id="email name" name="email name" placeholder="Enter Your Email Name" required>
+        <div class="valid-tooltip">
+          Looks good!
+        </div>
+      </div>  
+    <!-- City -->
+      <div class="col-md-6" >
+        <label for="city name" class="form-label">City</label>
+        <input type="text"  class="form-control city name"  id ="city name" required>
+        <div class="invalid-tooltip">  
+            please provide a valid  city          
+        </div>
+      </div>  
+      <div class="col-md-3" >
+        <label for="state name" class="form-label">State</label>
+        <select class="form-select state name"  id ="state name" required>
+          <option selected disabled value="">Choose...</option>         <option>...</option>
+        </select>                   
+        <div class="invalid-tooltip">  
+            please select a valid state.         
+        </div>
+      </div>     
+      <div class="col-md-3 ">
+        <label for="zip" class="form-label">Zip</label>
+        <input type="text" class="form-control zip" id="zip" required>
+        <div class="invalid-tooltip">
+          Please provide a valid zip.
+        </div>
+      </div>
+    
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+  </form>  
+<!-- form end -->
+  
+    
+
+
+        <h1> HOME WORK 2----- Utilities and flex</h1>
+
+
+<div class="container">
+ 
+
+  <div class="box2 border"></div>
+  <div class="border border-5"></div>
+  <div class="box2 border border-5 rounded -circle"></div>
+</div>
+
+
+      <h2>FLEX Direction</h2>
+
+<div class="container">
+  
+  <div class="d-flex flex-row bg-primary">
+    <div class="box2">Eid Mubarak 1</div>
+    <div class="box2">Eid Mubarak 2</div>
+    <div class="box2">Eid Mubarak 3</div>
+  </div> 
+  
+  <div class="d-flex flex-row-reverse bg-success">
+    <div class="box2">Eid Mubarak 1</div>
+    <div class="box2">Eid Mubarak 2</div>
+    <div class="box2">Eid Mubarak 3</div>
+  </div>
+</div>
+<div class="container">
+
+  <div class="d-flex flex-column bg-primary">
+    <div class="box2">Eid Mubarak 1</div>
+    <div class="box2">Eid Mubarak 2</div>
+    <div class="box2">Eid Mubarak 3</div>
+  </div>
+  <div class="d-flex flex-column-reverse bg-primary">
+    <div class="box2">Eid Mubarak 1</div>
+    <div class="box2">Eid Mubarak 2</div>
+    <div class="box2">Eid Mubarak 3</div>
+  </div> 
+
+</div>
+
+<h2>flex justify content</h2>
+
+<div class="container">
+
+  <div class="d-flex justify-content-start bg-primary">
+    <div class="box2">Eid Mubarak 1</div>
+    <div class="box2">Eid Mubarak 2</div>
+    <div class="box2">Eid Mubarak 3</div>
+  </div> 
+   <div class="d-flex justify-content-center bg-warning">
+    <div class="box2">Eid Mubarak 1</div>
+    <div class="box2">Eid Mubarak 2</div>
+    <div class="box2">Eid Mubarak 3</div>
+  </div>
+   <div class="d-flex justify-content-end bg-danger">
+    <div class="box2">Eid Mubarak 1</div>
+    <div class="box2">Eid Mubarak 2</div>
+    <div class="box2">Eid Mubarak 3</div>
+  </div> 
+   <div class="d-flex justify-content-between bg-success">
+    <div class="box2">Eid Mubarak 1</div>
+    <div class="box2">Eid Mubarak 2</div>
+    <div class="box2">Eid Mubarak 3</div>
+  </div>  
+   <div class="d-flex justify-content-around bg-info">
+    <div class="box2">Eid Mubarak 1</div>
+    <div class="box2">Eid Mubarak 2</div>
+    <div class="box2">Eid Mubarak 3</div>
+  </div> 
+   <div class="d-flex justify-content-evenly bg-warning">
+    <div class="box2">Eid Mubarak 1</div>
+    <div class="box2">Eid Mubarak 2</div>
+    <div class="box2">Eid Mubarak 3</div>
+  </div> 
+
+</div>
+
+
+<h2>Align self</h2>
+
+<div class="container">
+
+  <div class="d-flex align-items-start bg-primary">
+    <div class="box2">Eid Mubarak</div>
+    <div class="box2">Eid Mubarak </div>
+    <div class="box2">Eid Mubarak </div>
+  </div> 
+ <div class="d-flex align-items-end bg-warning">
+    <div class="box2">Eid Mubarak</div>
+    <div class="box2">Eid Mubarak </div>
+    <div class="box2">Eid Mubarak </div>
+  </div> 
+   <div class="d-flex align-items-center bg-dark">
+    <div class="box2">Eid Mubarak</div>
+    <div class="box2">Eid Mubarak </div>
+    <div class="box2">Eid Mubarak </div>
+  </div> 
+   <div class="d-flex align-items-baseline bg-info">
+    <div class="box2">Eid Mubarak</div>
+    <div class="box2">Eid Mubarak </div>
+    <div class="box2">Eid Mubarak </div>
+  </div> 
+   <div class="d-flex align-items-stretch bg-danger">
+    <div class="box2">Eid Mubarak</div>
+    <div class="box2">Eid Mubarak </div>
+    <div class="box2">Eid Mubarak </div>
+  </div> 
+</div>
+
+
+<h2>Order</h1>
+
+ <div class="container">
+
+  <div class="d-flex flex-nowrap bg-primary">
+    <div class="box2 order-3">Lorem 1</div>
+    <div class="box2 order-2"> Lorem 2</div>
+    <div class="box2 order-1">Lorem 3 </div>
+  </div>  
+</div>
+
+<h2>Shadow</h2>
+
+  <div class="container">
+    <div class="shadow-none p-3 mb-5 bg-body-tertiary rounded">No shadow</div>
+    <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">Small shadow</div>
+    <div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
+    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- js links -->
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>
+
